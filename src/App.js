@@ -9,10 +9,7 @@ export default function App() {
   return (
     <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.js">
       <div
-        style={{
-          height: "100%",
-          position: "relative",
-        }}
+        className="bvt_wrapper"
       >
         <Viewer
           fileUrl={`${process.env.PUBLIC_URL}/bvt_pilars.pdf`}
