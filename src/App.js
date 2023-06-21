@@ -5,7 +5,7 @@ import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 
 export default function App() {
-  const defaultLayoutPluginInstance = defaultLayoutPlugin();
+  const defaultLayoutPluginInstance = defaultLayoutPlugin({sidebarTabs: (defaultTabs) => []});
   return (
     <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.7.107/build/pdf.worker.js">
       <div
